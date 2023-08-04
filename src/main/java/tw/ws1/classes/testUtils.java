@@ -72,5 +72,13 @@ public class testUtils {
 
 		}
 	}
+	public static Member createMember() {
+		return new Member(123,"iii","III","1988-08-07");
+	}
+	public static String createScore() {
+		int socre = (int)(Math.random()*100)+1;
+		return socre+"";
+	}
+	
 
 }
