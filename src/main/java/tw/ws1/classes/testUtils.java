@@ -43,7 +43,7 @@ public class testUtils {
 			int intX = Integer.parseInt(x);
 			int intY = Integer.parseInt(y);
 			int r, mod;
-			r=mod=0;
+			r = mod = 0;
 			String ret = "";
 			switch (op) {
 			case "1":
@@ -72,13 +72,30 @@ public class testUtils {
 
 		}
 	}
+
 	public static Member createMember() {
-		return new Member(123,"iii","III","1988-08-07");
+		return new Member(123, "iii", "III", "1988-08-07");
 	}
+
 	public static String createScore() {
-		int socre = (int)(Math.random()*100)+1;
-		return socre+"";
+		int socre = (int) (Math.random() * 100) + 1;
+		return socre + "";
 	}
-	
+
+	public static int prevPage(String page) {
+		int p = Integer.parseInt(page);
+		if (p > 1)
+			p--;
+		return p;
+	}
+
+	public static int nextPage(String page, String pages) {
+		int ps = (int) Double.parseDouble(pages);
+		int p = Integer.parseInt(page);
+		if (p < ps)
+			p++;
+
+		return p;
+	}
 
 }
