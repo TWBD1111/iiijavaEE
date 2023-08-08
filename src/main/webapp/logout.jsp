@@ -3,5 +3,5 @@
 <%
 	//session.setAttribute("lottery", null);
 	session.invalidate();//全清
-	response.sendRedirect("test50.jsp");
+	response.sendRedirect("login.html");
 %>
